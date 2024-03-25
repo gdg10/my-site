@@ -14,9 +14,9 @@ export default function Index() {
           <Avatar fallback="GG" size="9" />
           <Heading align='center' size='9'>Garrett Grube</Heading>
           <Text align='center' size='6'>Welcome to my personal website</Text>
-          <Button size='4' onClick={() => navigate('/engineer')}>Story: Full-Stack Engineer <ArrowRightIcon /></Button>
-          <Button size='4' onClick={() => navigate('/drums')}>Story: Rock Drummer <ArrowRightIcon /></Button>
-          <Link size='2' target='_blank' href="https://github.com/gdg10">Show me the code!</Link>
+          <Button size='4' onClick={() => navigate('/engineer')}>Software Engineer <ArrowRightIcon /></Button>
+          <Button size='4' onClick={() => navigate('/drums')}>Drummer <ArrowRightIcon /></Button>        
+          <Link size='2' target='_blank' href="https://github.com/gdg10" className="mt-auto m-auto text-center">I hand-coded this website using React, Remix, & Radix UI. See the source on Github.</Link>
         </Flex>
       </Container>
     </Box>
