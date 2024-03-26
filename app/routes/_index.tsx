@@ -26,7 +26,7 @@ export const meta: MetaFunction = () => [{ title: "Garrett Grube" }];
 
 export default function Index() {
   return (
-    <Box className="h-screen bg-[var(--accent-1)]">
+    <Box className="h-screen bg-[var(--accent-1)] md:flex md:items-center md:justify-center">
       <motion.div
         initial={{ rotate: 0, scaleY: 0 }}
         animate={{ rotate: 0, scaleY: 1 }}
@@ -36,15 +36,8 @@ export default function Index() {
           damping: 20,
         }}
       >
-        <Container size="1">
-          <Flex
-            direction="column"
-            gap="3"
-            align="center"
-            justify="between"
-            py="8"
-            px="4"
-          >
+        <Container size="1" p="3">
+          <Flex direction="column" gap="3" align="center" py="4" px="3">
             <Flex direction="column" align="center" gap="1" mb="3">
               <Avatar
                 src={HEADSHOT_PATH}
@@ -70,6 +63,7 @@ export default function Index() {
               size="4"
               onClick={() => window.open(LINKEDIN_PROFILE_URL)}
               className="w-full"
+              variant="surface"
             >
               <LinkedInLogoIcon /> Linkedin profile
             </Button>
@@ -77,8 +71,9 @@ export default function Index() {
               size="4"
               onClick={() => window.open(GITHUB_REPOSITORY_URL)}
               className="w-full"
+              variant="surface"
             >
-              <GitHubLogoIcon /> This website&apos;s source code
+              <GitHubLogoIcon /> Code for this website
             </Button>
           </Flex>
         </Container>
