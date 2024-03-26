@@ -1,5 +1,8 @@
-import type { MetaFunction } from "@remix-run/node";
-
+import {
+  DownloadIcon,
+  GitHubLogoIcon,
+  LinkedInLogoIcon,
+} from "@radix-ui/react-icons";
 import {
   Flex,
   Text,
@@ -9,12 +12,8 @@ import {
   Box,
   Container,
 } from "@radix-ui/themes";
-
-import {
-  DownloadIcon,
-  GitHubLogoIcon,
-  LinkedInLogoIcon,
-} from "@radix-ui/react-icons";
+import type { MetaFunction } from "@remix-run/node";
+import { motion } from "framer-motion";
 
 import {
   GITHUB_REPOSITORY_URL,
@@ -22,8 +21,6 @@ import {
   LINKEDIN_PROFILE_URL,
   RESUME_PDF_PATH,
 } from "~/constants";
-
-import { motion } from "framer-motion";
 
 export const meta: MetaFunction = () => [{ title: "Garrett Grube" }];
 
@@ -81,7 +78,7 @@ export default function Index() {
               onClick={() => window.open(GITHUB_REPOSITORY_URL)}
               className="w-full"
             >
-              <GitHubLogoIcon /> This website's source code
+              <GitHubLogoIcon /> This website&apos;s source code
             </Button>
           </Flex>
         </Container>

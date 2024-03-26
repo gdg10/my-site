@@ -1,6 +1,7 @@
 import { Box } from "@radix-ui/themes";
 import type { MetaFunction } from "@remix-run/node";
 import { motion, useScroll } from "framer-motion";
+
 import ScrollSection from "~/components/ScrollSection";
 
 export const meta: MetaFunction = () => [

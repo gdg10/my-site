@@ -1,5 +1,5 @@
-import type { MetaFunction } from "@remix-run/node";
 import { Heading, Box } from "@radix-ui/themes";
+import type { MetaFunction } from "@remix-run/node";
 
 export const meta: MetaFunction = () => [{ title: "Garrett Grube: Drummer" }];
 
