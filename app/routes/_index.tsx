@@ -64,7 +64,7 @@ export default function Index() {
               onClick={() => window.open(RESUME_PDF_PATH)}
               className="w-full"
             >
-              <DownloadIcon /> Resume download
+              <DownloadIcon /> Resume
             </Button>
             <Button
               size="4"
