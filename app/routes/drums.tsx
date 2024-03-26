@@ -1,12 +1,14 @@
 import type { MetaFunction } from "@remix-run/node";
-import { Heading, Box } from '@radix-ui/themes';
+import { Heading, Box } from "@radix-ui/themes";
 
 export const meta: MetaFunction = () => [{ title: "Garrett Grube: Drummer" }];
 
 export default function Drums() {
-    return (
-        <Box className="h-screen">
-            <Heading align='center' size='9'>Drums</Heading>
-        </Box>
-    );
+  return (
+    <Box className="h-screen">
+      <Heading align="center" size="9">
+        Drums
+      </Heading>
+    </Box>
+  );
 }

@@ -1,3 +1,4 @@
+import { Theme } from "@radix-ui/themes";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
 import { json } from "@remix-run/node";
@@ -13,8 +14,8 @@ import {
 import { getUser } from "~/session.server";
 import stylesheet from "~/tailwind.css";
 
-import '@radix-ui/themes/styles.css';
-import { Theme, ThemePanel } from "@radix-ui/themes";
+import "@radix-ui/themes/styles.css";
+
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: stylesheet },
@@ -35,10 +36,12 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Theme accentColor="cyan"
+        <Theme
+          accentColor="cyan"
           panelBackground="translucent"
           scaling="100%"
-          radius="full">
+          radius="full"
+        >
           <Outlet />
           {/* <ThemePanel /> */}
         </Theme>
