@@ -26,14 +26,13 @@ export const meta: MetaFunction = () => [{ title: "Garrett Grube" }];
 
 export default function Index() {
   return (
-    <Box className="h-screen bg-[var(--accent-1)] md:flex md:items-center md:justify-center">
+    <Box className="h-screen bg-[var(--accent-4)] md:flex md:items-center md:justify-center">
       <motion.div
-        initial={{ rotate: 0, scaleY: 0 }}
-        animate={{ rotate: 0, scaleY: 1 }}
+        initial={{ rotate: 0, scale: 0 }}
+        animate={{ rotate: 0, scale: 1 }}
         transition={{
           type: "spring",
-          stiffness: 260,
-          damping: 20,
+          duration: 2
         }}
       >
         <Container size="1" p="3">
@@ -43,7 +42,7 @@ export default function Index() {
                 src={HEADSHOT_PATH}
                 fallback="GG"
                 size="9"
-                className="w-full rounded"
+                className="w-full rounded shadow-md"
               />
               <Heading size="9" align="center">
                 Garrett Grube
